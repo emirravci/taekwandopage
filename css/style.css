@@ -1021,8 +1021,7 @@ h1, h2, h3, h4, h5,
   margin: 0 auto;
 }
 #trophies-section {
-  background: linear-gradient(to bottom, #e8f3fb 0%, #ffffff 100%);
-  padding: 60px 0;
+  background: linear-gradient(to bottom, #e8f3fb 0%, #ffffff 100%) !important;
 }
 #trophies-section {
   background: 
