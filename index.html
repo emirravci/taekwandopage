@@ -75,6 +75,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
                 <li><a href="#classes-section" class="nav-link">Derslerimiz</a></li>
                 <li><a href="#schedule-section" class="nav-link">Program</a></li>
                 <li><a href="#trainer-section" class="nav-link">Eğitmenimiz</a></li>
+                <li><a href="#trophies-section" class="nav-link">Kupalarımız</a></li>
                 <li><a href="#about-section" class="nav-link">Hakkımızda</a></li>
                 <li><a href="#contact-section" class="nav-link">İletişim</a></li>
               </ul>
@@ -369,6 +370,87 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         </div>
       </div>
     </div>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<div class="site-section bg-light" id="trophies-section">
+  <div class="container">
+    <h2 class="text-black text-center mb-5">BAŞARILARIMIZ</h2>
+    
+    <!-- Slider wrapper -->
+    <div class="swiper trophies-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="trophy-item text-center">
+            <img src="images/img_11.jpg" class="trophy-image" alt="Kupa">
+            <h2 class="trophy-year">2</h2>
+            <p class="trophy-name">Türkiye Şampiyonluğu</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trophy-item text-center">
+            <img src="images/img_22.jpg" class="trophy-image" alt="Kupa">
+            <h2 class="trophy-year">1</h2>
+            <p class="trophy-name">Türkiye Kupası</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trophy-item text-center">
+            <img src="images/img_33.jpg" class="trophy-image" alt="Kupa">
+            <h2 class="trophy-year">16</h2>
+            <p class="trophy-name">İstanbul Ligi Şampiyonluğu</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trophy-item text-center">
+            <img src="images/img_44.jpg" class="trophy-image" alt="Kupa">
+            <h2 class="trophy-year">12</h2>
+            <p class="trophy-name">İstanbul Kupası Şampiyonluğu</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="trophy-item text-center">
+            <img src="images/img_44.jpg" class="trophy-image" alt="Kupa">
+            <h2 class="trophy-year">12</h2>
+            <p class="trophy-name">İstanbul Kupası Şampiyonluğu</p>
+          </div>
+        </div>
+                <div class="swiper-slide">
+          <div class="trophy-item text-center">
+            <img src="images/img_44.jpg" class="trophy-image" alt="Kupa">
+            <h2 class="trophy-year">12</h2>
+            <p class="trophy-name">İstanbul Kupası Şampiyonluğu</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".trophies-slider", {
+    slidesPerView: 4,    // aynı anda 4 kupa göster
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 4 }
+    }
+  });
+</script>
+
+
 
     
     
