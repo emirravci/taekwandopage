@@ -437,15 +437,26 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
 <script>
   var swiper = new Swiper(".trophies-slider", {
-    slidesPerView: 4,    // aynı anda 4 kupa göster
+    slidesPerView: 1, // En küçük ekranlarda varsayılan olarak 1 tane göster
     spaceBetween: 20,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    // Ekran boyutuna göre gösterilecek kupa sayısı
     breakpoints: {
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 4 }
+      // 576px ve üzeri ekranlarda
+      576: {
+        slidesPerView: 2
+      },
+      // 768px ve üzeri ekranlarda
+      768: {
+        slidesPerView: 3
+      },
+      // 992px ve üzeri ekranlarda
+      992: {
+        slidesPerView: 4
+      }
     }
   });
 </script>
